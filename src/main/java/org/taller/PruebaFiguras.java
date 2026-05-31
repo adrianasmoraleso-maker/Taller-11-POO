@@ -21,3 +21,18 @@ public class PruebaFiguras {
         rectangulo.mostrarArea();
     }
 }
+
+// Ejercicio3 Explicación método concreto:
+
+/*como se modificó el método calcularArea () de la clase Figura conviertiéndolo
+ en un método concreto en vez de abstracto; y también se modificó la clase circulo
+ para no sbrescribir dihco método. Esto no producirá error de compilación,
+ pero al ejecutar el programa el valor del área será 0.0 ya que se utiliza
+ la implementación genérica heredada desde Figura. Esto evidencia que calcularArea()
+ debería declararse como abstracto, pues cada figura requiere una implementación
+ específica para calcular su área correctamente.
+
+ Por lo tanto, definir este método como concreto permite que las clases
+ derivadas hereden un comportamiento incorrecto, afectando el principio
+ de abstracción y el diseño orientado a objetos.
+ */
